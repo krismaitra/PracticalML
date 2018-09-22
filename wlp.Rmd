@@ -61,7 +61,7 @@ a <- apply(training, MARGIN = 2, FUN = function(x)(sum(is.na(x) | x == "")))
 a[a>0]
 ```
 
-We find that out of the 160 columns, `r length(a[a>0])` columns have `r a[1]` NA or blank values out of the `r dim(training)[1]` observations. We also note that the outcome column, classe, is not among these columns, i.e. it does not have any NA or blank value. We therefore conclude that these columns do not have any significance as predictors and remove these columns from the training dataset.
+We find that out of the 160 columns, `r length(a[a>0])` columns have `r a[a>0][1]` NA or blank values out of the `r dim(training)[1]` observations. We also note that the outcome column, classe, is not among these columns, i.e. it does not have any NA or blank value. We therefore conclude that these columns do not have any significance as predictors and remove these columns from the training dataset.
 
 ```{r,echo=TRUE}
 training <- subset(training, select = setdiff(names(training), names(a[a>0])))
