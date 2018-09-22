@@ -7,4 +7,4 @@ The test data are available here: https://d396qusza40orc.cloudfront.net/predmach
 ## Analysis
 Details of analysis given in wlp.Rmd file in this branch of the repository.
 ## Output
-Compiled html page is present in the gh-pages branch of this repository and can be publicly accessed using this URL: https://www.coursera.org/learn/practical-machine-learning/peer/R43St/prediction-assignment-writeup/submit
+Compiled html page is present in the gh-pages branch of this repository and can be publicly accessed using this URL: https://krismaitra.github.io/PracticalML/wlp.html
